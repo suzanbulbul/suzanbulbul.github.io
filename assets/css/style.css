@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+.container {
+  background: #ff00e908;
+  height: 100%;
+  width: 60%;
+}
+@media (max-width: 891px) {
+  .container {
+    width: 100%;
+  }
+}
+
+body {
+  font-family: "Titillium Web", Arial, sans-serif;
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 891px) {
+  footer {
+    width: 100%;
+  }
+}
+footer .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background: pink;
+  border: none;
+}
+footer .card:hover {
+  color: #fff;
+  box-shadow: 0 6px 24px 0 rgba(233, 30, 99, 0.51);
+}
+footer .card i::before {
+  color: #e91e779e;
+  font-size: 22px;
+}
+
+.area {
+  padding-top: 130px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.area .img-area {
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.area .img-area img {
+  border-radius: 200px;
+}
+.area .title {
+  font-size: 35px;
+  font-weight: 700;
+  color: #e91e6382;
+  margin-bottom: 15px;
+}
+.area .desc {
+  font-size: 15px;
+  font-weight: 400;
+  width: 70%;
+  margin: 0 auto;
+  color: #e1a6c1;
+}
+@media (max-width: 891px) {
+  .area .desc {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
