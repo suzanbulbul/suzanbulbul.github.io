@@ -6,7 +6,13 @@ $font-family: 'Titillium Web', Arial , sans-serif;
     background: #ff00e908;
     height: 100%;
     width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @media (max-width: 891px) {
         width: 100%;
+    }
+    @media (min-width: 891px) {
+        max-width: 800px;
     }
 }
