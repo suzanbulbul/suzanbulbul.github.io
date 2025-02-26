@@ -34,6 +34,7 @@
           <div class="d-flex justify-content-between align-items-center">
             <a
               target="_blank"
+              target="_blank"
               href="https://twitter.com/suzanbulbl"
               class="card"
             >
@@ -65,34 +66,33 @@
             </a>
           </div>
         </footer>
+        <script src="https://bundles.efilli.com/suzanbulbul-github-io.vercel.app.prod.js"></script>
+        <script>
+          (function () {
+            fetch(
+              `https://policy-cms.efilli.com/api/result/67bf40f52898ad3a29a310da`,
+              { method: "GET", headers: { "page-url": window.location.href } }
+            )
+              .then((response) => response.json())
+              .then((data) => {
+                data.publishedPolicies.forEach((policy) => {
+                  const elementId = `efilli-${policy.type
+                    .toLowerCase()
+                    .replace(/\s+/g, "-")}-policy`;
+                  const element = document.querySelector(
+                    `[policy-cms-id="${elementId}"]`
+                  );
+                  if (element) {
+                    element.innerHTML = policy.contentHTML;
+                  }
+                });
+              })
+              .catch((error) => {
+                console.error("Error fetching policy data:", error);
+              });
+          })();
+        </script>
       </div>
     </div>
-
-    <!-- JavaScript kısmı burada olacak -->
-    <script>
-      function loadScript(url, callback) {
-        const script = document.createElement("script");
-        script.src = url;
-        script.type = "text/javascript";
-        script.onload = callback; // Script yüklendiğinde callback fonksiyonu çalışacak
-        document.body.appendChild(script);
-      }
-
-      // İlk scriptin (prod.js) yüklenmesini bekleyin
-      loadScript(
-        "https://bundles.efilli.com/suzanbulbul-github-io.vercel.app.prod.js",
-        function () {
-          console.log("prod.js yüklendi.");
-
-          // prod.js yüklendikten sonra, ikinci scripti (bundle.js) yükleyin
-          loadScript(
-            "http://localhost:8080/bundle.js?id=67bee2f0ab85e7a7c6f58255",
-            function () {
-              console.log("bundle.js yüklendi.");
-            }
-          );
-        }
-      );
-    </script>
   </body>
 </html>
