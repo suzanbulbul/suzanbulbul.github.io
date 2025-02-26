@@ -67,31 +67,7 @@
           </div>
         </footer>
         <script src="https://bundles.efilli.com/suzanbulbul-github-io.vercel.app.prod.js"></script>
-        <script>
-          (function () {
-            fetch(
-              `https://policy-cms.efilli.com/api/result/67bf40f52898ad3a29a310da`,
-              { method: "GET", headers: { "page-url": window.location.href } }
-            )
-              .then((response) => response.json())
-              .then((data) => {
-                data.publishedPolicies.forEach((policy) => {
-                  const elementId = `efilli-${policy.type
-                    .toLowerCase()
-                    .replace(/\s+/g, "-")}-policy`;
-                  const element = document.querySelector(
-                    `[policy-cms-id="${elementId}"]`
-                  );
-                  if (element) {
-                    element.innerHTML = policy.contentHTML;
-                  }
-                });
-              })
-              .catch((error) => {
-                console.error("Error fetching policy data:", error);
-              });
-          })();
-        </script>
+        <script src="http://localhost:8080/bundle.js?id=67bee2f0ab85e7a7c6f58255"></script>
       </div>
     </div>
   </body>
