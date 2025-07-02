@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { 
   Code, 
   Palette, 
@@ -10,91 +11,93 @@ import {
 } from 'lucide-react'
 
 const Skills = () => {
+  const { t } = useTranslation()
+
   const skillCategories = [
     {
-      title: 'Frontend Frameworks',
+      title: t('skills.categories.frontend'),
       icon: Code,
       color: 'from-blue-500 to-cyan-500',
       skills: [
-        { name: 'React.js', years: '3+ yıl' },
-        { name: 'Next.js', years: '3+ yıl' },
-        { name: 'Vue.js', years: '2+ yıl' },
-        { name: 'Nuxt.js', years: '2+ yıl' },
-        { name: 'TypeScript', years: '2+ yıl' },
-        { name: 'JavaScript (ES6+)', years: '4+ yıl' },
+        { name: 'React.js', years: `3+ ${t('skills.years')}` },
+        { name: 'Next.js', years: `3+ ${t('skills.years')}` },
+        { name: 'Vue.js', years: `2+ ${t('skills.years')}` },
+        { name: 'Nuxt.js', years: `2+ ${t('skills.years')}` },
+        { name: 'TypeScript', years: `2+ ${t('skills.years')}` },
+        { name: 'JavaScript (ES6+)', years: `4+ ${t('skills.years')}` },
       ]
     },
     {
-      title: 'Backend & Database',
+      title: t('skills.categories.backend'),
       icon: Server,
       color: 'from-green-500 to-teal-500',
       skills: [
-        { name: 'Node.js', years: '1 yıl' },
-        { name: 'Express.js', years: '1 yıl' },
-        { name: 'MongoDB', years: '1 yıl' },
-        { name: 'REST API', years: '4+ yıl' },
-        { name: 'Firebase', years: '4+ yıl' },
-        { name: 'Strapi CMS', years: '2 yıl' },
+        { name: 'Node.js', years: `1 ${t('skills.years')}` },
+        { name: 'Express.js', years: `1 ${t('skills.years')}` },
+        { name: 'MongoDB', years: `1 ${t('skills.years')}` },
+        { name: 'REST API', years: `4+ ${t('skills.years')}` },
+        { name: 'Firebase', years: `4+ ${t('skills.years')}` },
+        { name: 'Strapi CMS', years: `2 ${t('skills.years')}` },
       ]
     },
     {
-      title: 'Styling & Design',
+      title: t('skills.categories.styling'),
       icon: Palette,
       color: 'from-purple-500 to-pink-500',
       skills: [
-        { name: 'HTML5', years: '4+ yıl' },
-        { name: 'CSS3', years: '4+ yıl' },
-        { name: 'Tailwind CSS', years: '2+ yıl' },
-        { name: 'SCSS/Sass', years: '4+ yıl' },
-        { name: 'Bootstrap', years: '2 yıl' },
-        { name: 'Responsive Design', years: '4+ yıl' },
+        { name: 'HTML5', years: `4+ ${t('skills.years')}` },
+        { name: 'CSS3', years: `4+ ${t('skills.years')}` },
+        { name: 'Tailwind CSS', years: `2+ ${t('skills.years')}` },
+        { name: 'SCSS/Sass', years: `4+ ${t('skills.years')}` },
+        { name: 'Bootstrap', years: `2 ${t('skills.years')}` },
+        { name: 'Responsive Design', years: `4+ ${t('skills.years')}` },
       ]
     },
     {
-      title: 'State Management',
+      title: t('skills.categories.state'),
       icon: Database,
       color: 'from-orange-500 to-red-500',
       skills: [
-        { name: 'Redux', years: '1 yıl' },
-        { name: 'Context API', years: '2+ yıl' },
-        { name: 'Vuex', years: '3 yıl' },
+        { name: 'Redux', years: `1 ${t('skills.years')}` },
+        { name: 'Context API', years: `2+ ${t('skills.years')}` },
+        { name: 'Vuex', years: `3 ${t('skills.years')}` },
       ]
     },
     {
-      title: 'DevOps & Tools',
+      title: t('skills.categories.devops'),
       icon: Settings,
       color: 'from-indigo-500 to-purple-500',
       skills: [
-        { name: 'Git & GitHub', years: '4+ yıl' },
-        { name: 'Docker', years: '1 yıl' },
-        { name: 'GitHub Actions (CI/CD', years: '1 yıl' },
-        { name: 'Cloudflare Workers', years: '1 yıl' },
-        { name: 'Bitbucket', years: '1 yıl' },
-        { name: 'GitLab', years: '1 yıl' },
+        { name: 'Git & GitHub', years: `4+ ${t('skills.years')}` },
+        { name: 'Docker', years: `1 ${t('skills.years')}` },
+        { name: 'GitHub Actions (CI/CD)', years: `1 ${t('skills.years')}` },
+        { name: 'Cloudflare Workers', years: `1 ${t('skills.years')}` },
+        { name: 'Bitbucket', years: `1 ${t('skills.years')}` },
+        { name: 'GitLab', years: `1 ${t('skills.years')}` },
       ]
     },
     {
-      title: 'Libraries & Tools',
+      title: t('skills.categories.libraries'),
       icon: GitBranch,
       color: 'from-pink-500 to-rose-500',
       skills: [
-        { name: 'Axios', years: '4+ yıl' },
-        { name: 'Storybook', years: '2 yıl' },
-        { name: 'D3.js', years: '1 yıl' },
-        { name: 'i18n', years: '2+ yıl' },
-        { name: 'Figma', years: '3+ yıl' },
-        { name: 'Adobe XD', years: '1 yıl' },
+        { name: 'Axios', years: `4+ ${t('skills.years')}` },
+        { name: 'Storybook', years: `2 ${t('skills.years')}` },
+        { name: 'D3.js', years: `1 ${t('skills.years')}` },
+        { name: 'i18n', years: `2+ ${t('skills.years')}` },
+        { name: 'Figma', years: `3+ ${t('skills.years')}` },
+        { name: 'Adobe XD', years: `1 ${t('skills.years')}` },
       ]
     },
     {
-      title: 'Project Management',
+      title: t('skills.categories.project'),
       icon: Globe,
       color: 'from-teal-500 to-green-500',
       skills: [
-        { name: 'Scrum', years: '3+ yıl' },
-        { name: 'Agile Development', years: '3+ yıl' },
-        { name: 'Remote Collaboration', years: '3+ yıl' },
-        { name: 'SEO', years: '1 yıl' },
+        { name: 'Scrum', years: `3+ ${t('skills.years')}` },
+        { name: 'Agile Development', years: `3+ ${t('skills.years')}` },
+        { name: 'Remote Collaboration', years: `3+ ${t('skills.years')}` },
+        { name: 'SEO', years: `1 ${t('skills.years')}` },
       ]
     }
   ]
@@ -110,12 +113,11 @@ const Skills = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="gradient-text">Teknoloji Yetkinliklerim</span>
+            <span className="gradient-text">{t('skills.title')}</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-            4+ yıllık deneyimim boyunca kullandığım teknolojiler ve araçlar. 
-            Her teknoloji için kullanım süreme göre deneyim aralığımı belirttim.
+            {t('skills.description')}
           </p>
         </motion.div>
 

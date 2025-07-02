@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "skills": "Yetenekler",
+    "experience": "Deneyim",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "greeting": "Merhaba, ben",
+    "name": "Suzan Bülbül",
+    "title": "Full Stack Developer",
+    "description": "<strong>Frontend ağırlıklı projelerde</strong>, modern framework'lerle performanslı, sürdürülebilir ve yeniden kullanılabilir arayüzler geliştiriyorum. <strong>Vue.js/Nuxt.js</strong>, <strong>React.js/Next.js</strong> ile component-based yapılar kuruyor, responsive ve kullanıcı dostu arayüzler geliştiriyorum.",
+    "cta": "İletişime Geç",
+    "scroll": "Aşağı kaydır"
+  },
+  "about": {
+    "title": "Hakkımda",
+    "description": "Teknoloji ve yazılım geliştirme konusundaki tutkum, sürekli öğrenme ve kendimi geliştirme arzumla birleşince, kaliteli ve etkili çözümler üretmek için elimden gelenin en iyisini yapıyorum.",
+    "intro": "Merhaba! Ben <strong>Suzan Bülbül</strong>, <strong>Bilgisayar Mühendisliği</strong> mezunu ve <strong>Full Stack Developer</strong> olarak çalışıyorum.",
+    "experience": "4+ yıllık deneyimim boyunca <strong>frontend ağırlıklı projelerde</strong> uzmanlaştım ve modern framework'lerle performanslı, sürdürülebilir web uygulamaları geliştirdim.",
+    "skills": "Özellikle <strong>React.js</strong>, <strong>Vue.js</strong>, <strong>TypeScript</strong> ve <strong>Node.js</strong> teknolojileriyle çalışmaktan keyif alıyorum.",
+    "passion": "Yeni teknolojileri öğrenmek, karmaşık problemleri çözmek ve kullanıcı deneyimini iyileştirmek benim en büyük motivasyon kaynağım.",
+    "goal": "Amacım, teknoloji ile insanların hayatını kolaylaştıran, değer katan projeler geliştirmek.",
+    "info": {
+      "education": {
+        "title": "Eğitim",
+        "university": "İnönü Üniversitesi",
+        "degree": "Bilgisayar Mühendisliği",
+        "years": "2017 - 2021 | GPA: 3.19"
+      },
+      "work": {
+        "title": "Çalışma",
+        "remote": "Full Remote",
+        "flexible": "Esnek Saatler"
+      },
+      "focus": {
+        "title": "Odak",
+        "main": "Frontend Development",
+        "tech": "React, Vue, TypeScript"
+      },
+      "contact": {
+        "title": "İletişim",
+        "email": "suzanbulbl@gmail.com",
+        "linkedin": "linkedin.com/in/suzanbulbul",
+        "status": "İletişime açık"
+      }
+    },
+    "approach": {
+      "title": "Çalışma Yaklaşımım",
+      "learning": {
+        "title": "Sürekli Öğrenme",
+        "description": "Teknolojinin hızla değiştiği bu alanda kendimi güncel tutuyorum. Yeni frameworkler ve araçları öğrenmeyi seviyorum."
+      },
+      "code": {
+        "title": "Temiz Kod",
+        "description": "Okunabilir, sürdürülebilir ve test edilebilir kod yazmaya özen gösteriyorum. Code review süreçlerine katılırım."
+      },
+      "team": {
+        "title": "Ekip Çalışması",
+        "description": "İletişim becerileri güçlü, sorumluluk sahibi ve ekip içinde uyumlu çalişan bir geliştiriciyim."
+      }
+    }
+  },
+  "skills": {
+    "title": "Teknoloji Yetkinliklerim",
+    "description": "4+ yıllık deneyimim boyunca kullandığım teknolojiler ve araçlar. Her teknoloji için kullanım süreme göre deneyim aralığımı belirttim.",
+    "years": "yıl",
+    "categories": {
+      "frontend": "Frontend Frameworks",
+      "backend": "Backend & Database", 
+      "styling": "Styling & Design",
+      "state": "State Management",
+      "devops": "DevOps & Tools",
+      "libraries": "Libraries & Tools",
+      "project": "Project Management"
+    }
+  },
+  "experience": {
+    "title": "Profesyonel Deneyimim",
+    "description": "4+ yıllık süreçte uluslararası şirketlerde kazandığım deneyimler ve gerçekleştirdiğim projeler",
+    "present": "Günümüz",
+    "experiences": {
+      "efilli": {
+        "company": "EFILLI",
+        "position": "Full Stack Developer",
+        "period": "Aralık 2024 - Günümüz",
+        "location": "İzmir, TR (Remote)",
+        "description": [
+          "Birden fazla frontend ve backend projesini geliştirip liderliğini üstlendim.",
+          "URL ve subdomain analizi yapan sistemlerle farklı web uygulamaları geliştirdim.",
+          "Bir CMS ürünü için authentication, authorization yapısını ve widget SDK'sını sıfırdan tasarladım; yeni özellikler geliştirmeye devam ediyorum.",
+          "Tasarım aşamasından deploy sürecine kadar tüm geliştirme süreçlerini yönettim.",
+          "Scalable serverless mimariler geliştirdim ve uygulamaya aldım.",
+          "Custom Storybook ortamı kurdum ve otomatik CI/CD pipeline'ları yapılandırdım.",
+          "Yer aldığım projelerde iş akışlarını ve süreç yönetimini üstlendim."
+        ]
+      },
+      "mitsubishi": {
+        "company": "Mitsubishi Electric Innovation Center",
+        "position": "Frontend Developer",
+        "period": "Aralık 2023 - Aralık 2024",
+        "location": "California, US (Remote)",
+        "description": [
+          "Anymile super app için drone logistics yönetimi arayüzleri geliştirdim",
+          "6 uygulama arasında shared component library (Storybook) implementasyonu",
+          "Authentication, advanced authorization ve content filtering sistemleri",
+          "User preferences yönetimi (metric values, language, timezone)",
+          "Globally used platform için kapsamlı UI component geliştirme",
+          "Component dokümantasyonu ve test süreçleri yönetimi"
+        ]
+      },
+      "digitopia": {
+        "company": "DIGITOPIA",
+        "position": "Frontend Developer",
+        "period": "Ocak 2023 - Ağustos 2023",
+        "location": "İstanbul, TR (Hybrid)",
+        "description": [
+          "UI/UX-compatible visual reports oluşturdum",
+          "Register/login data processing ve algoritma analizi implementasyonu",
+          "Data flow ve state management optimizasyonu gerçekleştirdim",
+          "Component without Library yaklaşımı ile custom component geliştirme",
+          "Mailing sistemi ve D3.js ile data visualization entegrasyonu",
+          "Platform performans iyileştirmeleri ve platform yapısı güçlendirme"
+        ]
+      },
+      "phanka": {
+        "company": "Phanka Group - Wofdex Crypto Market",
+        "position": "Junior Frontend Developer",
+        "period": "Kasım 2021 - Kasım 2022",
+        "location": "İstanbul, TR (On-site)",
+        "description": [
+          "SEO-compliant product marketing, documentation ve blog pages geliştirdim",
+          "Crypto asset listing, transactions ve user management interface tasarımı",
+          "Trading platform için user interface ve landing page geliştirme",
+          "Landing Page - Mailing sistemi entegrasyonu",
+          "Strapi CMS ile content management sistemleri kurulumu",
+          "SEO optimizasyonu ve GitLab ile version control yönetimi"
+        ]
+      },
+      "huawei": {
+        "company": "Huawei Technologies",
+        "position": "Software Developer Intern",
+        "period": "Haziran 2021 - Eylül 2021",
+        "location": "İstanbul, TR (Remote)",
+        "description": [
+          "Admin ve consumer panels using MongoDB ve Vue.js geliştirdim",
+          "Authentication, forms ve search integration sistemleri",
+          "MongoDB veritabanı operations ve Vue.js frontend implementasyonu",
+          "User management ve database integration süreçleri",
+          "API entegrasyonları ve backend-frontend koordinasyonu",
+          "Software development lifecycle ve agile süreçlerde deneyim"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "title": "İletişime Geçelim",
+    "description": "Yeni projeler, iş birliği fırsatları veya herhangi bir konuda benimle iletişime geçmekten çekinmeyin. Birlikte harika şeyler yaratabilir, teknoloji ile değer üretebiliriz.",
+    "info": {
+      "title": "İletişim Bilgileri",
+      "description": "<strong>Bilgisayar Mühendisi</strong> olarak frontend ağırlıklı projelerde 4+ yıllık deneyimim var. Modern framework'lerle scalable ve maintainable web uygulamaları geliştiriyorum. Remote çalışma ve uluslararası projeler konusunda deneyimliyim.",
+      "email": "Email",
+      "location": "Konum",
+      "locationValue": "Antalya, Türkiye",
+      "social": "Sosyal Medya"
+    },
+    "form": {
+      "title": "Mesaj Gönder",
+      "name": "İsim",
+      "email": "Email",
+      "message": "Mesaj",
+      "namePlaceholder": "Adınız ve soyadınız",
+      "emailPlaceholder": "email@example.com",
+      "messagePlaceholder": "İletmek istediğiniz mesajınız...",
+      "send": "Mesaj Gönder"
+    }
+  },
+  "footer": {
+    "title": "Full Stack Developer",
+    "built": "React + TypeScript + Tailwind ile geliştirildi",
+    "copyright": "Made by"
+  }
+} 

@@ -1,10 +1,12 @@
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { Mail, MapPin, Send, User, MessageSquare } from 'lucide-react'
 import { useState } from 'react'
 import { getIconComponent, socialLinksData } from '../utils/constant'
 
 
 const Contact = () => {
+  const { t } = useTranslation()
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -31,15 +33,15 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: Mail,
-      title: 'Email',
+      title: t('contact.info.email'),
       info: 'suzanbulbl@gmail.com',
       link: 'mailto:suzanbulbl@gmail.com',
       color: 'from-blue-500 to-cyan-500'
     },
     {
       icon: MapPin,
-      title: 'Konum',
-      info: 'Antalya, Türkiye',
+      title: t('contact.info.location'),
+      info: t('contact.info.locationValue'),
       link: '#',
       color: 'from-purple-500 to-pink-500'
     }
@@ -57,12 +59,11 @@ const Contact = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="gradient-text">İletişime Geçelim</span>
+            <span className="gradient-text">{t('contact.title')}</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-            Yeni projeler, iş birliği fırsatları veya herhangi bir konuda benimle iletişime geçmekten çekinmeyin. 
-            Birlikte harika şeyler yaratabilir, teknoloji ile değer üretebiliriz.
+            {t('contact.description')}
           </p>
         </motion.div>
 
@@ -76,11 +77,11 @@ const Contact = () => {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-bold text-white mb-6">İletişim Bilgileri</h3>
-              <p className="text-gray-400 mb-8 leading-relaxed">
-                <strong className="text-white">Bilgisayar Mühendisi</strong> olarak frontend ağırlıklı projelerde 
-                4+ yıllık deneyimim var. Modern framework'lerle scalable ve maintainable web uygulamaları 
-                geliştiriyorum. Remote çalışma ve uluslararası projeler konusunda deneyimliyim.
+              <h3 className="text-2xl font-bold text-white mb-6">{t('contact.info.title')}</h3>
+              <p 
+                className="text-gray-400 mb-8 leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: t('contact.info.description') }}
+              >
               </p>
             </div>
 
@@ -121,7 +122,7 @@ const Contact = () => {
               transition={{ duration: 0.8, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              <h4 className="text-white font-semibold mb-4">Sosyal Medya</h4>
+              <h4 className="text-white font-semibold mb-4">{t('contact.info.social')}</h4>
               <div className="flex space-x-4">
                 {socialLinksData.map((social, index) => {
                   const IconComponent = getIconComponent(social.iconName)
@@ -159,7 +160,7 @@ const Contact = () => {
           >
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
               <MessageSquare className="mr-3 text-blue-400" size={28} />
-              Mesaj Gönder
+              {t('contact.form.title')}
             </h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -171,7 +172,7 @@ const Contact = () => {
               >
                 <label htmlFor="name" className="block text-white font-medium mb-2 flex items-center">
                   <User size={18} className="mr-2 text-gray-400" />
-                  İsim
+                  {t('contact.form.name')}
                 </label>
                 <input
                   type="text"
@@ -181,7 +182,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-xl text-white placeholder-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none transition-all duration-300"
-                  placeholder="Adınız ve soyadınız"
+                  placeholder={t('contact.form.namePlaceholder')}
                 />
               </motion.div>
 
@@ -193,7 +194,7 @@ const Contact = () => {
               >
                 <label htmlFor="email" className="block text-white font-medium mb-2 flex items-center">
                   <Mail size={18} className="mr-2 text-gray-400" />
-                  Email
+                  {t('contact.form.email')}
                 </label>
                 <input
                   type="email"
@@ -203,7 +204,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-xl text-white placeholder-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none transition-all duration-300"
-                  placeholder="emailiniz@example.com"
+                  placeholder={t('contact.form.emailPlaceholder')}
                 />
               </motion.div>
 
@@ -215,7 +216,7 @@ const Contact = () => {
               >
                 <label htmlFor="message" className="block text-white font-medium mb-2 flex items-center">
                   <MessageSquare size={18} className="mr-2 text-gray-400" />
-                  Mesaj
+                  {t('contact.form.message')}
                 </label>
                 <textarea
                   id="message"
@@ -225,8 +226,8 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-xl text-white placeholder-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none transition-all duration-300 resize-none"
-                  placeholder="Projeniz hakkında detayları paylaşın..."
-                />
+                  placeholder={t('contact.form.messagePlaceholder')}
+                ></textarea>
               </motion.div>
 
               <motion.button
@@ -237,25 +238,12 @@ const Contact = () => {
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-purple-600 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
+                className="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold py-3 px-6 rounded-xl hover:from-blue-600 hover:to-purple-600 transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
               >
                 <Send size={20} />
-                <span>Mesaj Gönder</span>
+                <span>{t('contact.form.send')}</span>
               </motion.button>
             </form>
-
-            <div className="mt-6 text-center">
-              <p className="text-gray-400 text-sm">
-                Form gönderilemiyorsa, direkt{' '}
-                <a
-                  href="mailto:suzanbulbl@gmail.com"
-                  className="text-blue-400 hover:text-blue-300 transition-colors underline"
-                >
-                  suzanbulbl@gmail.com
-                </a>{' '}
-                adresine mail atabilirsiniz.
-              </p>
-            </div>
           </motion.div>
         </div>
       </div>

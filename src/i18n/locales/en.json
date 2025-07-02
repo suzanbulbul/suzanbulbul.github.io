@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Suzan Bülbül",
+    "title": "Full Stack Developer",
+    "description": "In <strong>frontend-focused projects</strong>, I develop performant, sustainable and reusable interfaces with modern frameworks. I build component-based structures with <strong>Vue.js/Nuxt.js</strong>, <strong>React.js/Next.js</strong> and develop responsive and user-friendly interfaces.",
+    "cta": "Get in Touch",
+    "scroll": "Scroll down"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "My passion for technology and software development, combined with my desire to continuously learn and improve myself, drives me to do my best to produce quality and effective solutions.",
+    "intro": "Hello! I'm <strong>Suzan Bülbül</strong>, a <strong>Computer Engineering</strong> graduate and working as a <strong>Full Stack Developer</strong>.",
+    "experience": "During my 4+ years of experience, I specialized in <strong>frontend-focused projects</strong> and developed performant, sustainable web applications with modern frameworks.",
+    "skills": "I particularly enjoy working with <strong>React.js</strong>, <strong>Vue.js</strong>, <strong>TypeScript</strong> and <strong>Node.js</strong> technologies.",
+    "passion": "Learning new technologies, solving complex problems and improving user experience are my biggest sources of motivation.",
+    "goal": "My goal is to develop projects that make people's lives easier and add value through technology.",
+    "info": {
+      "education": {
+        "title": "Education",
+        "university": "Inonu University",
+        "degree": "Computer Engineering",
+        "years": "2017 - 2021 | GPA: 3.19"
+      },
+      "work": {
+        "title": "Work",
+        "remote": "Full Remote",
+        "flexible": "Flexible Hours"
+      },
+      "focus": {
+        "title": "Focus",
+        "main": "Frontend Development",
+        "tech": "React, Vue, TypeScript"
+      },
+      "contact": {
+        "title": "Contact",
+        "email": "suzanbulbl@gmail.com",
+        "linkedin": "linkedin.com/in/suzanbulbul",
+        "status": "Available for contact"
+      }
+    },
+    "approach": {
+      "title": "My Work Approach",
+      "learning": {
+        "title": "Continuous Learning",
+        "description": "I keep myself up to date in this rapidly changing field of technology. I love learning new frameworks and tools."
+      },
+      "code": {
+        "title": "Clean Code",
+        "description": "I pay attention to writing readable, maintainable and testable code. I participate in code review processes."
+      },
+      "team": {
+        "title": "Teamwork",
+        "description": "I am a developer with strong communication skills, responsible and harmonious working within the team."
+      }
+    }
+  },
+  "skills": {
+    "title": "My Technology Skills",
+    "description": "Technologies and tools I have used during my 4+ years of experience. I've indicated my experience range based on my usage duration for each technology.",
+    "years": "years",
+    "categories": {
+      "frontend": "Frontend Frameworks",
+      "backend": "Backend & Database",
+      "styling": "Styling & Design",
+      "state": "State Management",
+      "devops": "DevOps & Tools",
+      "libraries": "Libraries & Tools",
+      "project": "Project Management"
+    }
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "description": "Experiences I gained and projects I completed at international companies during my 4+ year journey",
+    "present": "Present",
+    "experiences": {
+      "efilli": {
+        "company": "EFILLI",
+        "position": "Full Stack Developer",
+        "period": "December 2024 - Present",
+        "location": "İzmir, TR (Remote)",
+        "description": [
+          "Developed and led multiple frontend and backend projects.",
+          "Developed different web applications with systems that analyze URLs and subdomains.",
+          "Designed from scratch the authentication, authorization structure and widget SDK for a CMS product; continuing to develop new features.",
+          "Managed all development processes from design stage to deployment process.",
+          "Developed and implemented scalable serverless architectures.",
+          "Set up custom Storybook environment and configured automated CI/CD pipelines.",
+          "Took over workflow and process management in the projects I was involved in."
+        ]
+      },
+      "mitsubishi": {
+        "company": "Mitsubishi Electric Innovation Center",
+        "position": "Frontend Developer",
+        "period": "December 2023 - December 2024",
+        "location": "California, US (Remote)",
+        "description": [
+          "Developed drone logistics management interfaces for Anymile super app",
+          "Shared component library (Storybook) implementation across 6 applications",
+          "Authentication, advanced authorization and content filtering systems",
+          "User preferences management (metric values, language, timezone)",
+          "Comprehensive UI component development for globally used platform",
+          "Component documentation and test process management"
+        ]
+      },
+      "digitopia": {
+        "company": "DIGITOPIA",
+        "position": "Frontend Developer",
+        "period": "January 2023 - August 2023",
+        "location": "İstanbul, TR (Hybrid)",
+        "description": [
+          "Created UI/UX-compatible visual reports",
+          "Register/login data processing and algorithm analysis implementation",
+          "Performed data flow and state management optimization",
+          "Custom component development with Component without Library approach",
+          "Mailing system and D3.js data visualization integration",
+          "Platform performance improvements and platform structure strengthening"
+        ]
+      },
+      "phanka": {
+        "company": "Phanka Group - Wofdex Crypto Market",
+        "position": "Junior Frontend Developer",
+        "period": "November 2021 - November 2022",
+        "location": "İstanbul, TR (On-site)",
+        "description": [
+          "Developed SEO-compliant product marketing, documentation and blog pages",
+          "Crypto asset listing, transactions and user management interface design",
+          "User interface and landing page development for trading platform",
+          "Landing Page - Mailing system integration",
+          "Content management systems setup with Strapi CMS",
+          "SEO optimization and version control management with GitLab"
+        ]
+      },
+      "huawei": {
+        "company": "Huawei Technologies",
+        "position": "Software Developer Intern",
+        "period": "June 2021 - September 2021",
+        "location": "İstanbul, TR (Remote)",
+        "description": [
+          "Developed admin and consumer panels using MongoDB and Vue.js",
+          "Authentication, forms and search integration systems",
+          "MongoDB database operations and Vue.js frontend implementation",
+          "User management and database integration processes",
+          "API integrations and backend-frontend coordination",
+          "Experience in software development lifecycle and agile processes"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "title": "Let's Get in Touch",
+    "description": "Don't hesitate to contact me about new projects, collaboration opportunities or any other matter. Together we can create great things and create value with technology.",
+    "info": {
+      "title": "Contact Information",
+      "description": "As a <strong>Computer Engineer</strong>, I have 4+ years of experience in frontend-focused projects. I develop scalable and maintainable web applications with modern frameworks. I have experience in remote work and international projects.",
+      "email": "Email",
+      "location": "Location",
+      "locationValue": "Antalya, Turkey",
+      "social": "Social Media"
+    },
+    "form": {
+      "title": "Send Message",
+      "name": "Name",
+      "email": "Email", 
+      "message": "Message",
+      "namePlaceholder": "Your name and surname",
+      "emailPlaceholder": "email@example.com",
+      "messagePlaceholder": "Your message...",
+      "send": "Send Message"
+    }
+  },
+  "footer": {
+    "title": "Full Stack Developer",
+    "built": "Built with React + TypeScript + Tailwind",
+    "copyright": "Made by"
+  }
+} 

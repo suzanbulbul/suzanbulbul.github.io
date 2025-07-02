@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { getIconComponent, socialLinksData } from '../utils/constant'
 
 
 const Footer = () => {
+  const { t } = useTranslation()
   const currentYear = new Date().getFullYear()
 
   return (
@@ -18,7 +20,7 @@ const Footer = () => {
             className="text-center md:text-left"
           >
             <h3 className="text-2xl font-bold gradient-text mb-2">Suzan Bülbül</h3>
-            <p className="text-gray-400">Full Stack Developer</p>
+            <p className="text-gray-400">{t('footer.title')}</p>
           </motion.div>
 
           {/* Social Links */}
@@ -57,10 +59,10 @@ const Footer = () => {
             className="text-center md:text-right"
           >
             <p className="text-gray-500 text-sm">
-              React + TypeScript + Tailwind ile geliştirildi
+              {t('footer.built')}
             </p>
             <p className="text-gray-400 flex items-center justify-center md:justify-end gap-1 mt-2">
-              © {currentYear} Made by   <a 
+              © {currentYear} {t('footer.copyright')}   <a 
                 href="https://linkedin.com/in/suzanbulbul" 
                 target="_blank" 
                 rel="noopener noreferrer"

@@ -1,86 +1,53 @@
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { Calendar, MapPin, Briefcase } from 'lucide-react'
 
 const Experience = () => {
+  const { t } = useTranslation()
+
   const experiences = [
     {
-      company: 'EFILLI',
-      position: 'Full Stack Developer',
-      period: 'Aralık 2024 - Günümüz',
-      location: 'İzmir, TR (Remote)',
-              description: [
-                'Birden fazla frontend ve backend projesini geliştirip liderliğini üstlendim.',
-                'URL ve subdomain analizi yapan sistemlerle farklı web uygulamaları geliştirdim.',
-                'Bir CMS ürünü için authentication, authorization yapısını ve widget SDK’sını sıfırdan tasarladım; yeni özellikler geliştirmeye devam ediyorum.',
-                'Tasarım aşamasından deploy sürecine kadar tüm geliştirme süreçlerini yönettim.',
-                'Scalable serverless mimariler geliştirdim ve uygulamaya aldım.',
-                'Custom Storybook ortamı kurdum ve otomatik CI/CD pipeline’ları yapılandırdım.',
-                'Yer aldığım projelerde iş akışlarını ve süreç yönetimini üstlendim.'
-              ],
+      company: t('experience.experiences.efilli.company'),
+      position: t('experience.experiences.efilli.position'),
+      period: t('experience.experiences.efilli.period'),
+      location: t('experience.experiences.efilli.location'),
+      description: t('experience.experiences.efilli.description', { returnObjects: true }) as string[],
       tech: ['Vue.js', 'React.js', 'TypeScript', 'Tailwind', 'Node.js', 'Express.js', 'MongoDB', 'Cloudflare Workers', 'Docker', 'GitHub Actions'],
       link: 'https://efilli.com/'
     },
     {
-      company: 'Mitsubishi Electric Innovation Center',
-      position: 'Frontend Developer',
-      period: 'Aralık 2023 - Aralık 2024',
-      location: 'California, US (Remote)',
-      description: [
-        'Anymile super app için drone logistics yönetimi arayüzleri geliştirdim',
-        '6 uygulama arasında shared component library (Storybook) implementasyonu',
-        'Authentication, advanced authorization ve content filtering sistemleri',
-        'User preferences yönetimi (metric values, language, timezone)',
-        'Globally used platform için kapsamlı UI component geliştirme',
-        'Component dokümantasyonu ve test süreçleri yönetimi'
-      ],
+      company: t('experience.experiences.mitsubishi.company'),
+      position: t('experience.experiences.mitsubishi.position'),
+      period: t('experience.experiences.mitsubishi.period'),
+      location: t('experience.experiences.mitsubishi.location'),
+      description: t('experience.experiences.mitsubishi.description', { returnObjects: true }) as string[],
       tech: ['React.js', 'TypeScript', 'Context API', 'Tailwind', 'Storybook', 'Bitbucket'],
       link: 'https://www.anymile.io/'
     },
     {
-      company: 'DIGITOPIA',
-      position: 'Frontend Developer',
-      period: 'Ocak 2023 - Ağustos 2023',
-      location: 'İstanbul, TR (Hybrid)',
-      description: [
-        'UI/UX-compatible visual reports oluşturdum',
-        'Register/login data processing ve algoritma analizi implementasyonu',
-        'Data flow ve state management optimizasyonu gerçekleştirdim',
-        'Component without Library yaklaşımı ile custom component geliştirme',
-        'Mailing sistemi ve D3.js ile data visualization entegrasyonu',
-        'Platform performans iyileştirmeleri ve platform yapısı güçlendirme'
-      ],
+      company: t('experience.experiences.digitopia.company'),
+      position: t('experience.experiences.digitopia.position'),
+      period: t('experience.experiences.digitopia.period'),
+      location: t('experience.experiences.digitopia.location'),
+      description: t('experience.experiences.digitopia.description', { returnObjects: true }) as string[],
       tech: ['React.js', 'Next.js', 'Redux', 'Custom Components', 'D3.js', 'Mailing', 'GitHub'],
       link: 'https://digitopia.co/'
     },
     {
-      company: 'Phanka Group - Wofdex Crypto Market',
-      position: 'Junior Frontend Developer',
-      period: 'Kasım 2021 - Kasım 2022',
-      location: 'İstanbul, TR (On-site)',
-      description: [
-        'SEO-compliant product marketing, documentation ve blog pages geliştirdim',
-        'Crypto asset listing, transactions ve user management interface tasarımı',
-        'Trading platform için user interface ve landing page geliştirme',
-        'Landing Page - Mailing sistemi entegrasyonu',
-        'Strapi CMS ile content management sistemleri kurulumu',
-        'SEO optimizasyonu ve GitLab ile version control yönetimi'
-      ],
+      company: t('experience.experiences.phanka.company'),
+      position: t('experience.experiences.phanka.position'),
+      period: t('experience.experiences.phanka.period'),
+      location: t('experience.experiences.phanka.location'),
+      description: t('experience.experiences.phanka.description', { returnObjects: true }) as string[],
       tech: ['Vue.js', 'Nuxt.js', 'Bootstrap', 'BootstrapVue', 'Strapi', 'SEO', 'GitLab'],
       link: 'https://wofdex.com/'
     },
     {
-      company: 'Huawei Technologies',
-      position: 'Software Developer Intern',
-      period: 'Haziran 2021 - Eylül 2021',
-      location: 'İstanbul, TR (Remote)',
-      description: [
-        'Admin ve consumer panels using MongoDB ve Vue.js geliştirdim',
-        'Authentication, forms ve search integration sistemleri',
-        'MongoDB veritabanı operations ve Vue.js frontend implementasyonu',
-        'User management ve database integration süreçleri',
-        'API entegrasyonları ve backend-frontend koordinasyonu',
-        'Software development lifecycle ve agile süreçlerde deneyim'
-      ],
+      company: t('experience.experiences.huawei.company'),
+      position: t('experience.experiences.huawei.position'),
+      period: t('experience.experiences.huawei.period'),
+      location: t('experience.experiences.huawei.location'),
+      description: t('experience.experiences.huawei.description', { returnObjects: true }) as string[],
       tech: ['Vue.js', 'MongoDB', 'JavaScript', 'REST API', 'Authentication'],
       link: '#'
     }
@@ -97,11 +64,11 @@ const Experience = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="gradient-text">Profesyonel Deneyimim</span>
+            <span className="gradient-text">{t('experience.title')}</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-            4+ yıllık süreçte uluslararası şirketlerde kazandığım deneyimler ve gerçekleştirdiğim projeler
+            {t('experience.description')}
           </p>
         </motion.div>
 

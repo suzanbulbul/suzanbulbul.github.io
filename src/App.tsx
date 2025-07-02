@@ -1,4 +1,7 @@
 import { motion } from 'framer-motion'
+import { Routes, Route, Navigate, useParams } from 'react-router-dom'
+import { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -7,7 +10,17 @@ import Experience from './components/Experience'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
-function App() {
+const PortfolioPage = () => {
+  const { lang } = useParams<{ lang: string }>()
+  const { i18n } = useTranslation()
+  
+  useEffect(() => {
+    if (lang && ['tr', 'en'].includes(lang)) {
+      i18n.changeLanguage(lang)
+      document.documentElement.lang = lang
+    }
+  }, [lang, i18n])
+
   return (
     <div className="min-h-screen bg-slate-900 text-white overflow-x-hidden">
       {/* Background Animation */}
@@ -34,6 +47,15 @@ function App() {
       
       <Footer />
     </div>
+  )
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Navigate to="/tr" replace />} />
+      <Route path="/:lang" element={<PortfolioPage />} />
+    </Routes>
   )
 }
 

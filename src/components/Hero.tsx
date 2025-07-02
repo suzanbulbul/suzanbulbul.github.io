@@ -1,9 +1,12 @@
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { getIconComponent, socialLinksData } from '../utils/constant'
 import { ArrowRight } from 'lucide-react'
 
 
 const Hero = () => {
+  const { t } = useTranslation()
+
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
       {/* Background Effects */}
@@ -33,7 +36,7 @@ const Hero = () => {
             className="flex items-center space-x-2"
           >
             <div className="w-8 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500"></div>
-            <span className="text-blue-400 font-medium">Merhaba, ben</span>
+            <span className="text-blue-400 font-medium">{t('hero.greeting')}</span>
           </motion.div>
 
           {/* Name */}
@@ -54,7 +57,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="text-xl md:text-2xl text-gray-300"
           >
-            <span className="text-blue-400">Full Stack Developer</span>
+            <span className="text-blue-400">{t('hero.title')}</span>
           </motion.div>
 
           {/* Description */}
@@ -63,11 +66,8 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
             className="text-lg text-gray-400 leading-relaxed max-w-2xl"
+            dangerouslySetInnerHTML={{ __html: t('hero.description') }}
           >
-            <strong className="text-white">Frontend ağırlıklı projelerde</strong>, modern framework'lerle 
-            performanslı, sürdürülebilir ve yeniden kullanılabilir arayüzler geliştiriyorum. 
-            <strong className="text-blue-400"> Vue.js/Nuxt.js</strong>, <strong className="text-blue-400">React.js/Next.js </strong> 
-            ile component-based yapılar kuruyor, responsive ve kullanıcı dostu arayüzler geliştiriyorum.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -81,7 +81,7 @@ const Hero = () => {
               href="#contact"
               className="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-full hover:from-blue-600 hover:to-purple-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              <span>İletişime Geç</span>
+              <span>{t('hero.cta')}</span>
               <ArrowRight size={20} className="ml-2" />
             </a>
           </motion.div>
@@ -180,7 +180,7 @@ const Hero = () => {
           href="#about"
           className="flex flex-col items-center space-y-2 cursor-pointer hover:scale-110 transition-all duration-300"
         >
-          <span className="text-gray-400 text-sm hover:text-white transition-colors">Aşağı kaydır</span>
+          <span className="text-gray-400 text-sm hover:text-white transition-colors">{t('hero.scroll')}</span>
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity }}

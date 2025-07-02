@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
+import LanguageSwitcher from './LanguageSwitcher'
 
 const Header = () => {
+  const { t } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -16,10 +19,10 @@ const Header = () => {
   }, [])
 
   const navItems = [
-    { href: '#about', label: 'Hakkımda' },
-    { href: '#skills', label: 'Yetenekler' },
-    { href: '#experience', label: 'Deneyim' },
-    { href: '#contact', label: 'İletişim' },
+    { href: '#about', label: t('nav.about') },
+    { href: '#skills', label: t('nav.skills') },
+    { href: '#experience', label: t('nav.experience') },
+    { href: '#contact', label: t('nav.contact') },
   ]
 
   return (
@@ -31,10 +34,10 @@ const Header = () => {
       }`}
     >
       <nav className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-between">
    
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8 flex-1 justify-center">
             {navItems.map((item) => (
               <motion.a
                 key={item.href}
@@ -49,13 +52,19 @@ const Header = () => {
             ))}
           </div>
 
+          {/* Language Switcher - Desktop */}
+          <div className="hidden md:block">
+            <LanguageSwitcher />
+          </div>
+
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="w-full md:hidden flex items-center space-x-3 justify-end">
+            <LanguageSwitcher />
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-white hover:text-blue-400 transition-colors"
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? <X size={30} /> : <Menu size={30} />}
             </button>
           </div>
         </div>
