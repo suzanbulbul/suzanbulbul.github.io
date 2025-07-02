@@ -64,7 +64,7 @@ const Header = () => {
               onClick={() => setIsOpen(!isOpen)}
               className="text-white hover:text-blue-400 transition-colors"
             >
-              {isOpen ? <X size={30} /> : <Menu size={30} />}
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
