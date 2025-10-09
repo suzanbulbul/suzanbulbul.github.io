@@ -3,51 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Suzan Bülbül - Full Stack Developer | React, Vue.js, TypeScript ile modern web uygulamaları geliştiriyorum" />
-    <meta name="keywords" content="Frontend Developer, React, Vue.js, TypeScript, JavaScript, Web Developer, Suzan Bülbül" />
+    <meta
+      name="description"
+      content="Suzan Bülbül - Full Stack Developer | React, Vue.js, TypeScript ile modern web uygulamaları geliştiriyorum"
+    />
+    <meta
+      name="keywords"
+      content="Frontend Developer, React, Vue.js, TypeScript, JavaScript, Web Developer, Suzan Bülbül"
+    />
     <meta name="author" content="Suzan Bülbül" />
-    
-    <meta property="og:title" content="Suzan Bülbül | Full Stack Developer Portfolio" />
-    <meta property="og:description" content="4+ yıllık deneyime sahip Frontend Developer. React, Vue.js ve modern web teknolojileri ile projeler geliştiriyorum." />
-    <meta property="og:image" content="https://media.licdn.com/dms/image/v2/D4D03AQGqpXZVRzKuCQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730891776975?e=1756944000&v=beta&t=cCf7kSjsMd5qX-bv3fVwzJG71JetVyfSnzv9vZ-1Pjc" />
+
+    <meta
+      property="og:title"
+      content="Suzan Bülbül | Full Stack Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="4+ yıllık deneyime sahip Frontend Developer. React, Vue.js ve modern web teknolojileri ile projeler geliştiriyorum."
+    />
+    <meta
+      property="og:image"
+      content="https://media.licdn.com/dms/image/v2/D4D03AQGqpXZVRzKuCQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730891776975?e=1756944000&v=beta&t=cCf7kSjsMd5qX-bv3fVwzJG71JetVyfSnzv9vZ-1Pjc"
+    />
     <meta property="og:url" content="https://suzanbulbul.github.io" />
     <meta property="og:type" content="website" />
-    
+
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Suzan Bülbül | Full Stack Developer" />
-    <meta name="twitter:description" content="React, Vue.js ve TypeScript ile modern web uygulamaları geliştiren Frontend Developer" />
-    <meta name="twitter:image" content="https://media.licdn.com/dms/image/v2/D4D03AQGqpXZVRzKuCQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730891776975?e=1756944000&v=beta&t=cCf7kSjsMd5qX-bv3fVwzJG71JetVyfSnzv9vZ-1Pjc" />
-    
-    <link rel="icon" type="image/jpeg" href="https://media.licdn.com/dms/image/v2/D4D03AQGqpXZVRzKuCQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730891776975?e=1756944000&v=beta&t=cCf7kSjsMd5qX-bv3fVwzJG71JetVyfSnzv9vZ-1Pjc"
+    <meta
+      name="twitter:description"
+      content="React, Vue.js ve TypeScript ile modern web uygulamaları geliştiren Frontend Developer"
+    />
+    <meta
+      name="twitter:image"
+      content="https://media.licdn.com/dms/image/v2/D4D03AQGqpXZVRzKuCQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730891776975?e=1762387200&v=beta&t=9CFtLYMiSc58l6NYqsthE2TiShCov9ckzb2klSJdbdA"
+    />
+
+    <link
+      rel="icon"
+      type="image/jpeg"
+      content="https://media.licdn.com/dms/image/v2/D4D03AQGqpXZVRzKuCQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730891776975?e=1762387200&v=beta&t=9CFtLYMiSc58l6NYqsthE2TiShCov9ckzb2klSJdbdA"
     />
     <title>Suzan Bülbül | Full Stack Developer</title>
-    
+    <script src="https://beta-a11y-bundles.efilli.com/suzanbulbul.github.io.js"></script>
+
     <!-- GitHub Pages SPA fallback -->
     <script type="text/javascript">
-      (function(l) {
+      (function (l) {
         if (l.search) {
           var q = {};
-          l.search.slice(1).split('&').forEach(function(v) {
-            var a = v.split('=');
-            q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
-          });
+          l.search
+            .slice(1)
+            .split("&")
+            .forEach(function (v) {
+              var a = v.split("=");
+              q[a[0]] = a.slice(1).join("=").replace(/~and~/g, "&");
+            });
           if (q.p !== undefined) {
-            window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + (q.p || '') +
-              (q.q ? ('?' + q.q) : '') +
-              l.hash
+            window.history.replaceState(
+              null,
+              null,
+              l.pathname.slice(0, -1) +
+                (q.p || "") +
+                (q.q ? "?" + q.q : "") +
+                l.hash
             );
           }
         }
-        
-        // Handle hash-based routing to path-based routing
+
         if (l.hash && l.hash.length > 1) {
           var hashPath = l.hash.slice(1);
-          if (hashPath.startsWith('/')) {
+          if (hashPath.startsWith("/")) {
             window.history.replaceState(null, null, hashPath + l.search);
           }
         }
-      }(window.location))
+      })(window.location);
     </script>
   </head>
   <body>

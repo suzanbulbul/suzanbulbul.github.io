@@ -19,7 +19,6 @@ const LanguageSwitcher = () => {
     i18n.changeLanguage(langCode)
     navigate(`/${langCode}`)
     setIsOpen(false)
-    // HTML lang attribute'unu da güncelle
     document.documentElement.lang = langCode
   }
 

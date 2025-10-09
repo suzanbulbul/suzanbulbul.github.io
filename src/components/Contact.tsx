@@ -15,11 +15,9 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Form submission logic would go here
     const mailtoLink = `mailto:suzanbulbl@gmail.com?subject=Portfolio İletişim: ${formData.name}&body=${formData.message}%0D%0A%0D%0AKimden: ${formData.name}%0D%0AEmail: ${formData.email}`
     window.open(mailtoLink, '_blank')
     
-    // Reset form
     setFormData({ name: '', email: '', message: '' })
   }
 
